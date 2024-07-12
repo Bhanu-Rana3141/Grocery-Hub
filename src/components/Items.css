@@ -1,0 +1,17 @@
+.items {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items img {
+    height: 60px;
+}
+
+.items p {
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+}
