@@ -1,51 +1,34 @@
-import React from 'react'
-import './Navbar.css'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-    <>
-      <div className="navbar">
-        <div className='logo'>
-            <img src="Images\blackLogo1.png" alt="logo" />
-            <img src="Images\blackLogo2.png" alt="logo" />
-        </div>
-
-        <img id='search-icon' src="Images\search-icon.png" alt="search-icon" />
-        <div className="search-bar">
-            <input placeholder='Search for Products' type="text" name="search" id="search" />
-        </div>
-
-        <div className="login-cart">
-          <div className="login">
-              Login/Register
-          </div>
-
-          <div className="cart">
-            <div>
-              Cart
-            </div>
-            <div>
-              <img src="Images\Cart.png" alt="cart" />
-            </div>
-          </div>
-        </div>
-
+    <div className="navbar">
+      <div className="logo">
+        <img src="Images/1_Logo.png" alt="logo" />
       </div>
 
-      {/* NAVBAR 2 - CATEGORIES */}
-      <ul className="categories">
-        <li><Link to='' className='no-underline'>Beverages</Link></li>
-        <li><Link to='' className='no-underline'>Snacks</Link></li>
-        <li><Link to='' className='no-underline'>Bakery</Link></li>
-        <li><Link to='' className='no-underline'>Diary</Link></li>
-        <li><Link to='' className='no-underline'>Foodgrains</Link></li>
-        <li><Link to='' className='no-underline'>Cosmetics</Link></li>
+      <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+        <li><Link to='' className='links'>Home</Link></li>
+        <li><Link to='' className='links'>About</Link></li>
+        <li><Link to='' className='links'>Categories</Link></li>
+        <li><Link to='' className='links'>Login/Register</Link></li>
+        <li><Link to='' className='links'>Cart</Link></li>
+        <img id='cart' src="Images/cart.png" alt="cart" />
       </ul>
-    </>
-  )
+
+      <div className="hamburger-icon" onClick={toggleMobileMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+    </div>
+  );
 }
-/*
-  if image is in public folder no need to import it
-*/
