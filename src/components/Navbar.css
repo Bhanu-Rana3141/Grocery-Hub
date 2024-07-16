@@ -53,13 +53,14 @@
         display: none;
     }
 
-    .nav-links.active {
+    .active {
         display: flex;
         flex-direction: column;
+        background-color: #ffffff;
         position: absolute;
         top: 60px;
-        background-color: #ffffff;
-        width: 100%;
+        left: 0;
+        right: 0;
         padding: 20px;
     }
 
@@ -71,3 +72,5 @@
         display: none;
     }
 }
+
+/* using left 0 , right 0  spans the entire width of the container */
