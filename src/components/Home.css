@@ -1,0 +1,17 @@
+video {
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    color: #000cff;
+    background: linear-gradient(to bottom right, #ff0745, #000cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width : 850px) {
+    h2 {
+        font-size: 2rem;
+    }
+}

@@ -19,6 +19,7 @@ export default function Navbar() {
         <li><Link to='/' className='links'>Home</Link></li>
         <li><Link to='' className='links'>About</Link></li>
         <li><Link to='' className='links'>Categories</Link></li>
+        <li><Link to='' className='links'>Contact</Link></li>
         <li><Link to='' className='links'>Login/Register</Link></li>
         <li><Link to='' className='links'>Cart</Link></li>
         <Link to=''><img id='cart' src="Images/cart.png" alt="cart" /></Link>
