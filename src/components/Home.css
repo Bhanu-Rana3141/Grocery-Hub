@@ -1,17 +1,96 @@
+/* Home.css */
+  
+body , html{
+    overflow-x: hidden;
+}
+
 video {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 h2 {
-    text-align: center;
-    color: #000cff;
-    background: linear-gradient(to bottom right, #ff0745, #000cff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: #000cff;
+  background: linear-gradient(to bottom right, #ff0745, #000cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 40px 0px ;
 }
 
-@media (min-width : 850px) {
-    h2 {
-        font-size: 2rem;
-    }
+.categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.items {
+  max-width: 22%; /* Ensure that items do not exceed 22% of the width */
+  /* box-sizing: border-box; */
+  margin-bottom: 40px;
+}
+
+.items img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maintain equal height and width */
+  object-fit: cover; /* Ensures the image covers the entire div while maintaining aspect ratio */
+  border-radius: 8px; /* Optional: for rounded corners */
+  transition: transform 0.3s ease; /* Optional: for a hover effect */
+}
+
+.items img:hover {
+  transform: scale(1.05); /* Optional: for a hover effect */
+}
+
+.items p {
+  text-align: center;
+}
+
+.item-border img {
+  border: 1px solid grey;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+}
+
+/* Add media queries for responsiveness */
+ @media (max-width: 1200px) {
+  .items {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .items {
+    max-width: 27%;
+  }
+  h2 {
+    font-size: 1.5rem; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .items {
+    max-width: 45%;
+  }
+  h2 {
+    font-size: 1.25rem; /* Smaller font size on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .items {
+    max-width: 80%;
+  }
+  h2 {
+    font-size: 1rem; /* Smaller font size on extra small screens */
+  }
+}
+
+@media (min-width: 1201px) {
+  h2 {
+    font-size: 2rem; /* Font size for larger screens */
+  }
 }

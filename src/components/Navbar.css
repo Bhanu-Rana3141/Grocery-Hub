@@ -58,11 +58,12 @@
         flex-direction: column;
         background-color: #ffffff;
         position: absolute;
-        top: 60px;
+        top: 34px;
         left: 0;
         right: 0;
         padding: 20px;
         border-bottom: 1px solid grey;
+        font-size: 0.9rem;
     }
 
     .hamburger-icon{
@@ -73,5 +74,3 @@
         display: none;
     }
 }
-
-/* using left 0 , right 0  spans the entire width of the container */
