@@ -6,7 +6,6 @@ import Categories from './Categories';
 export default function Home() {
   return (
     <>
-      <video src="Videos/HomePageVideo.mp4" width="100%" controls autoPlay loop muted></video>
       <Categories/>
     </>
   );

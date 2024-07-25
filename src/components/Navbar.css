@@ -11,19 +11,20 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    border-bottom: 1px solid none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }    
 
 .logo img {
     height: 50px;
-    margin-left : 1rem;
-    display: flex;
+    margin-left : 1rem;  
 }
 
 .nav-links li{
     display: inline-block;
 }
 
-.links, img {
+.links {
     text-decoration: none;
     list-style: none;
     margin-right: 2rem;
@@ -35,6 +36,7 @@
    height: 28px;
    position: relative;
    top: 0.4rem;
+   right: 30px;
 }
 
 .hamburger-icon {
@@ -59,8 +61,7 @@
         background-color: #ffffff;
         position: absolute;
         top: 34px;
-        left: 0;
-        right: 0;
+        width: 100%;
         padding: 20px;
         border-bottom: 1px solid grey;
         font-size: 0.9rem;

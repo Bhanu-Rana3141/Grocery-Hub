@@ -1,19 +1,5 @@
-/* Home.css */
-  
-body , html{
-    overflow-x: hidden;
-}
-
-video {
-  margin-top: 80px;
-}
-
-h2 {
-  text-align: center;
-  color: #000cff;
-  background: linear-gradient(to bottom right, #ff0745, #000cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 40px 0px ;
+#homeImg {
+    max-width: 100%;
+    margin-top: 33px;
 }
 
