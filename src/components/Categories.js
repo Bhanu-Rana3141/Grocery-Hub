@@ -5,7 +5,7 @@ import './Categories.css'
 export default function Categories() {
   return (
     <>
-        <h1>Shop by category</h1>
+        <h2>Shop by category</h2>
 
         <div className="categories">
 
@@ -130,8 +130,7 @@ export default function Categories() {
                     <p>LED Bulbs</p>
                 </Link>
             </div>
-
-
+            
         </div>
     </>
   )

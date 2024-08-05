@@ -1,5 +1,24 @@
-#homeImg {
-    max-width: 100%;
-    margin-top: 33px;
+h1 {
+    color: #0F172A;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
 }
 
+p {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.inputClass {
+    text-align: center;
+}
+
+.inputClass input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px
+}

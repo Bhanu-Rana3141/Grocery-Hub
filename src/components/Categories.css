@@ -1,4 +1,4 @@
-h1 {
+h2 {
   text-align: center;
   color: #000cff;
   background: linear-gradient(to bottom right, #ff0745, #000cff);
@@ -41,7 +41,7 @@ a {
 }
 
 @media (min-width : 992px) {
-  h1 {
+  h2 {
     font-size: 2rem;
   }
 }
@@ -50,7 +50,7 @@ a {
   .items {
     max-width: 30%;
   }
-  h1 {
+  h2 {
     font-size: 1.5rem; 
   }
 }
@@ -59,7 +59,7 @@ a {
   .items {
     max-width: 45%;
   }
-  h1 {
+  h2 {
     font-size: 1.25rem; 
   }
 }
@@ -68,7 +68,7 @@ a {
   .items {
     max-width: 70%;
   }
-  h1 {
+  h2 {
     font-size: 1.25rem;
   }
 }
