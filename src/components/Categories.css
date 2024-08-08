@@ -4,7 +4,7 @@ h2 {
   background: linear-gradient(to bottom right, #ff0745, #000cff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 100px;
+  margin : 60px 0px 40px 0px;
 }
 
 .categories {

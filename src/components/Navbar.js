@@ -17,10 +17,11 @@ export default function Navbar() {
 
       <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
         <li><Link to='/'className='links'>Home</Link></li>
-        <li><Link to='' className='links'>About</Link></li>
+        {/* <li><Link to='' className='links'>About</Link></li> */}
         <li><Link to='/categories' className='links'>Categories</Link></li>
         <li><Link to='' className='links'>Contact</Link></li>
-        <li><Link to='' className='links'>Login</Link></li>
+        <li><Link to='/login' className='links'>Login</Link></li>
+        <li><Link to='/register' className='links'>Register</Link></li>
         <li><Link to='' className='links'>Cart</Link></li>
         <Link to=''><img id='cart' src="Images/cart.png" alt="cart" /></Link>
       </ul>

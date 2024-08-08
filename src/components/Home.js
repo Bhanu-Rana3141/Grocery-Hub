@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Categories from './Categories';
+import Footer from './Footer';
 
 export default function Home() {
 
@@ -29,7 +30,6 @@ export default function Home() {
       </div>
 
       <Categories/>
-
     </>
   );
 }

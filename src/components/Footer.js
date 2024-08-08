@@ -17,7 +17,7 @@ export default function Footer() {
                 <Link to=""><p>About</p></Link>
                 <Link to=""><p>Categories</p></Link>
                 <Link to=""><p>Contact</p></Link>
-                <Link to=""><p className='lastLink'>Login</p></Link>
+                <Link to=""><p>Login</p></Link>
             </div>
 
             <div className="section-3">
@@ -31,12 +31,12 @@ export default function Footer() {
                 <Link to=""><p>Dry Fruits</p></Link>
                 <Link to=""><p>Chocolates & toffees</p></Link>
                 <Link to=""><p>Pooja items</p></Link>
-                <Link to=""><p className='lastLink'>Slippers</p></Link>
+                <Link to=""><p>Slippers</p></Link>
             </div>
 
             <div className="section-4">
                 <h4>More Options</h4>
-            <Link to=""><p>Mosquitos Repellants</p></Link>
+                <Link to=""><p>Mosquitos Repellants</p></Link>
                 <Link to=""><p>Cleaning & households</p></Link>
                 <Link to=""><p>Eggs</p></Link>
                 <Link to=""><p>Skin Care</p></Link>

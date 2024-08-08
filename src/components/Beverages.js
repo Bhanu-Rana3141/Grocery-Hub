@@ -6,6 +6,9 @@ export default function Beverages() {
     <> 
         <img id='heroImage' src="Images/beveragesLandingPage.png" alt="beverages" />
         <h2>Cold drinks</h2>
+        
+        
+
     </>
   )
 }
